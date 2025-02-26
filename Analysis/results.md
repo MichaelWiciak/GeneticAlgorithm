@@ -9,4 +9,13 @@ There are some peaks of best fitness and as such the average increases for that 
 Running more generations beyond convergence doesn’t provide meaningful improvements and just wastes resources.
 Stopping when fitness stagnates ensures efficiency so its important to consider computational cost.
 
+(spikes because sometimes they get lucky, a lot of cheese on the path of a mathematical curve they are following)
+
 Part 2: Describe the behaviour of the mice as it evolves over evolutionary time.
+
+Intially, the mice move in come kind of mathematical equation/curve way and are trying to collect cheese/yellow dots. However, they are just following a path and dont take into account the cheese/modify their pathing based on the nearest cheese. So they collect cheese only by chance.
+
+As the generations progress, the mice get better at collecting cheese and the average fitness increases. This is because the mice are now actively looking for the cheese and trying to travel to the closest cheese relative to their position. There is now fierce competition between the mice to get to the cheese first, often many mice go for the same cheese because it is the closest to them.
+The mice are now actively trying to get to the cheese and are not just moving randomly. They are now following a path to the cheese and are trying to get to the cheese, the speed of them is variable.
+
+Part 3:
