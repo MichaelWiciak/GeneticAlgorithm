@@ -19,3 +19,18 @@ As the generations progress, the mice get better at collecting cheese and the av
 The mice are now actively trying to get to the cheese and are not just moving randomly. They are now following a path to the cheese and are trying to get to the cheese, the speed of them is variable.
 
 Part 3:
+For both, why i am doing these experiments, whats my design, quantify the performance (graphs again) and decide if its worth it. what are the advantages and disadvantages of it? 
+Put in the seeds and parameter values.
+Keep seed the same 1. !!!
+
+
+a) so for this modify sensor in evo mouse/combine th etwo/ experiment with parameters.
+
+
+
+b) modify the neaural net, aka more layers, different initial values etc...
+
+
+
+
+Question 2:

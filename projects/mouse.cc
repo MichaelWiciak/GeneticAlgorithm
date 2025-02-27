@@ -110,11 +110,11 @@ class EvoMouse : public EvoFFNAnimat
 public:
 	EvoMouse(): cheesesFound(0)
 	{
-		This.Add("angle", NearestAngleSensor<Cheese>());
+		// This.Add("angle", NearestAngleSensor<Cheese>());
 // An alternative to the NearestAngleSensor is the Proximity Sensor, which
 // gives less precise directional information, but does let the mouse know
 // how far away the cheese is.
-//		This.Add("proximity", ProximitySensor<Cheese>(PI/8, 80.0, 0.0));
+		This.Add("proximity", ProximitySensor<Cheese>(PI/8, 80.0, 0.0));
 		This.InitRandom = true;
 		This.InitFFN(4);
 	}

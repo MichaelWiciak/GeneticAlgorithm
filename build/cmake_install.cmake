@@ -1,4 +1,4 @@
-# Install script for directory: /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm
+# Install script for directory: /uolstore/home/users/ed203mw/GeneticAlgorithm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,9 +44,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs/cmake_install.cmake")
-  include("/uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/apps/cmake_install.cmake")
-  include("/uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/projects/cmake_install.cmake")
+  include("/uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs/cmake_install.cmake")
+  include("/uolstore/home/users/ed203mw/GeneticAlgorithm/build/apps/cmake_install.cmake")
+  include("/uolstore/home/users/ed203mw/GeneticAlgorithm/build/projects/cmake_install.cmake")
 
 endif()
 
@@ -58,5 +58,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/uolstore/home/users/ed203mw/GeneticAlgorithm/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

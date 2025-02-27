@@ -31,6 +31,7 @@ public:
 		// these values and configures the network accordingly.
 		InitFFN(4);
 		SetInitRandom(true);
+		This.InitRandom = true;
 		This.MinSpeed = 0;
 		This.MaxSpeed = 100;
 	}

@@ -1,4 +1,4 @@
-# Install script for directory: /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/apps
+# Install script for directory: /uolstore/home/users/ed203mw/GeneticAlgorithm/apps
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
