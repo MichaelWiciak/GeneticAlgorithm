@@ -30,7 +30,7 @@ public:
 		// (2) and the number of controls (2). The InitFFN function determines
 		// these values and configures the network accordingly.
 		InitFFN(4);
-		SetInitRandom(true);
+		This.SetInitRandom(true);
 		This.InitRandom = true;
 		This.MinSpeed = 0;
 		This.MaxSpeed = 100;
@@ -74,7 +74,8 @@ public:
 		Add("right", ProximitySensor<Prey>(PI/5, 200.0, PI/20));
 
 		InitFFN(4);
-		SetInitRandom(true);
+		This.SetInitRandom(true);
+		This.InitRandom = true;
 
 		This.MinSpeed = 0;
 		This.MaxSpeed = 100;
@@ -119,6 +120,9 @@ public:
 	gaPred(0.7f, 0.1f), gaPrey(0.7f, 0.1f), 
 	popPred(30,gaPred), popPrey(30,gaPrey)
 	{
+		// Set the seed for the random number generator
+		srand(static_cast<unsigned int>(time(0)));
+
 		gaPred.SetSelection(GA_RANK);
 		gaPred.SetParameter(GA_RANK_SPRESSURE, 2.0);
 		
@@ -140,4 +144,3 @@ public:
 		Add("Prey", popPrey);
 	}
 };
-

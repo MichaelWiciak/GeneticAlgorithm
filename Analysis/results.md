@@ -34,3 +34,5 @@ b) modify the neaural net, aka more layers, different initial values etc...
 
 
 Question 2:
+See the behaviour of the system after 10, 50 and 100 generations and base the answers on that? see how it changes. 
+
