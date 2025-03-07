@@ -105,18 +105,25 @@ private:
 // it's more convenient to inherit from EvoFFNAnimat which gives us all
 // the GA and FFN code. Multiple inheritance would be another option, but
 // introduces a host of other unwanted complications.
-class EvoMouse : public EvoFFNAnimat
+class EvoMouse : public  EvoFFNAnimat //EvoDNNAnimat //
 {
 public:
-	EvoMouse(): cheesesFound(0)
+	static int totalCheeseAvailable; // Total cheese in the environment
+
+	EvoMouse(): cheesesFound(0), obstacleCollisions(0), simulationTime(1.0f)
 	{
-		// This.Add("angle", NearestAngleSensor<Cheese>());
+		This.Add("angle", NearestAngleSensor<Cheese>());
 // An alternative to the NearestAngleSensor is the Proximity Sensor, which
 // gives less precise directional information, but does let the mouse know
 // how far away the cheese is.
-		This.Add("proximity", ProximitySensor<Cheese>(PI/8, 80.0, 0.0));
+		This.Add("left", ProximitySensor<Cheese>(1.5, 1000.0, 0.8));
+		This.Add("right", ProximitySensor<Cheese>(1.5, 1000.0, -0.8));
+		// This.Add("LeftEye", LeftEyeSensor<Cheese>(2.44, 200.0, 0.8));
+		// This.Add("RightEye", RightEyeSensor<Cheese>(2.44, 200.0, -0.8));
+		// This.Add("Eyes", CombinedEyeSensor<Cheese>(2.44, 1000.0, 0.8));
 		This.InitRandom = true;
-		This.InitFFN(4);
+		// This.InitDNN(4);
+		This.InitFFN(4); 
 	}
 
 	// This is identical to the OnCollision method for Mouse, except here we
@@ -128,33 +135,68 @@ public:
 		if (IsKindOf(obj,cheese)) {
 			cheesesFound++;
 			cheese->Eaten();
+		} else {
+			obstacleCollisions++; // Count obstacle collisions
 		}
+		
 
 		EvoFFNAnimat::OnCollision(obj);
+		// EvoDNNAnimat::OnCollision(obj);
 	}
 
 	// The EvoMouse's fitness is the amount of cheese collected, divided by
 	// the power usage, so a mouse is penalised for simply charging around
 	// as fast as possible and randomly collecting cheese - it needs to find
 	// its target carefully.
-	virtual float GetFitness()const
+	virtual float GetFitness() const
 	{
-		return This.cheesesFound > 0 ? static_cast<float>(This.cheesesFound) / This.DistanceTravelled.as<float>() : 0;
+		if (cheesesFound == 0) return 0;
+
+		// Adjust fitness based on time and obstacle avoidance
+		float efficiency = static_cast<float>(cheesesFound) / (This.DistanceTravelled.as<float>() * simulationTime);
+		float penalty = 1.0f / (1.0f + obstacleCollisions); // Reduce fitness if obstacles are hit
+
+		// cout << "Total cheese collected by all mice: " << cheesesFound << endl;
+
+		
+		return efficiency * penalty;
 	}
+
+	// EvoMouse's fitness is the amount of cheese collected, divided by
+	// the power usage, so a mouse is penalised for simply charging around
+	// as fast as possible and randomly collecting cheese - it needs to find
+	// its target carefully.
+	// virtual float GetFitness()const
+	// {
+	// 	return This.cheesesFound > 0 ? static_cast<float>(This.cheesesFound) / This.DistanceTravelled.as<float>() : 0;
+	// } 
 
 	// Overloading the ToString method allows us to output a small amount of
 	// information which is visible in the status bar of the GUI when a
 	// mouse is clicked on.
-	virtual string ToString()const
-	{
-		ostringstream out;
-		out << " Power used: " << This.PowerUsed;
-		return out.str();
-	}
+	// virtual string ToString() const override
+    // {
+    //     ostringstream out;
+    //     out << "Cheese collected: " << cheesesFound << " / " << totalCheeseAvailable;
+    //     return out.str();
+    // }
+	virtual std::string ToString() const override {
+        std::ostringstream out;
+        out << "Cheese collected: " << cheesesFound << " / 30";  // Assuming total cheese is 30
+        return out.str();
+    }
+
+	// return how many cheeses were collected
+	int GetCheesesFound() const { return cheesesFound; }
 
 private:
 	int cheesesFound;	// The number of cheeses collected for this run.
+	int obstacleCollisions; // Tracks the number of times the mouse hits an obstacle
+	float simulationTime; // Tracks how long the mouse has been active
+    int totalCheeseCollected = 0;
 };
+
+int EvoMouse::totalCheeseAvailable = 0;
 
 class MouseSimulation : public Simulation
 {
@@ -162,11 +204,12 @@ class MouseSimulation : public Simulation
 	Population<EvoMouse> theMice;
 //	Group<Mouse> theMice;
 	Group<Cheese> theCheeses;
+	// std::cerr << "This is an error message" << std::endl;
 
 public:
 	MouseSimulation():
 	theGA(0.7f, 0.05f),	// Crossover probability of 0.7, mutation probability of 0.05
-//	theMice(30),		// 30 mice are in the population.
+	// theMice(30),		// 30 mice are in the population.
 	theMice(30, theGA), // 30 mice are in the population.
 	theCheeses(30)		// 30 cheeses are around at one time.
 	{
@@ -181,6 +224,23 @@ public:
 
 		This.Add("Mice", This.theMice);
 		This.Add("Cheeses", This.theCheeses);
+
+		EvoMouse::totalCheeseAvailable = 30; // Set total cheese count
+		// call output total cheese collected
+		OutputTotalCheeseCollected(); 
+
+	}
+	// Function to calculate and output the total amount of cheese collected by all mice
+	std::string OutputTotalCheeseCollected()
+	{
+		int totalCheeseCollected = 0;
+		for (const auto& mouse : theMice)
+		{
+			totalCheeseCollected += mouse->GetCheesesFound();
+		}
+		cout << "Total cheese collected by all mice: " << totalCheeseCollected << endl;
+		// return the string
+		return "Total cheese collected by all mice: " + to_string(totalCheeseCollected);
 	}
 };
 

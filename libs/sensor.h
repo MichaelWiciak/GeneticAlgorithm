@@ -33,6 +33,8 @@ namespace BEAST {
  * specified to create a 'laser' type sensor, or an angle of TWOPI will create
  * an all-round distance sensor.
  */
+
+
 template <class T>
 Sensor* ProximitySensor(double scope, double range, double orientation)
 {
@@ -44,6 +46,7 @@ Sensor* ProximitySensor(double scope, double range, double orientation)
 	return s;
 }
 
+
 template <class T>
 Sensor* NearestAngleSensor()
 {
@@ -54,6 +57,31 @@ Sensor* NearestAngleSensor()
 	
 	return s;
 }
+
+template <class T>
+Sensor* CombinedEyeSensor(double scope, double range, double orientation)
+{
+    // Create the left and right sensors with the specified parameters
+    Sensor* left = new BeamSensor(scope, range, Vector2D(0.0, 0.0), orientation);
+    Sensor* right = new BeamSensor(scope, range, Vector2D(0.0, 0.0), -orientation);
+
+    // Set the matching function for both sensors
+    left->SetMatchingFunction(new MatchKindOf<T>);
+    right->SetMatchingFunction(new MatchKindOf<T>);
+
+    // Create the evaluation function combining both sensors
+    SensorEvalFunction* evalFunc = new EvalNearestCombination(left, right, range);
+
+    // Set the evaluation function for both sensors (assuming the sensors can share the same eval function)
+    left->SetEvaluationFunction(evalFunc);
+    right->SetEvaluationFunction(evalFunc);
+
+    left->SetScalingFunction(new ScaleLinear(0.0, range, 1.0, 0.0));
+    right->SetScalingFunction(new ScaleLinear(0.0, range, 1.0, 0.0));
+
+    return right;
+}
+
 
 template <class T>
 Sensor* NearestXSensor()

@@ -789,12 +789,15 @@ std::string GeneticAlgorithm<EVO, MUTFUNC>::ToString()const
 		out << "Elitism:         " << setw(6) << elitism << "  "
 			<< "Sub-elitism:     " << setw(6) << subelitism << endl
 			<< "Output population size: " << outputPopSize << endl << endl;
+			
 	}
 
 	if ((printStyle & GA_CURRENT) != 0) {
+		// print hello world
 		out << "Generation: " << setw(6) << generations << "   " << "Average fitness: "
 			<< setw(8) << totalFitness / static_cast<float>(inputPopSize) << "   "
 			<< "Best fitness: " << setw(8) << bestFitness << endl;
+			// output the input pop size and outputpop size
 	}
 
 	if ((printStyle & GA_GENERATION) != 0) {

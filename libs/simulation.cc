@@ -143,6 +143,14 @@ void Simulation::EndGeneration()
 		*logStream << ToString(SIM_PRINT_GENERATION);
 	}
 
+	// Call OutputTotalCheeseCollected() for "Mice" object
+	auto it = contents.find("Mice");
+
+
+	// if (it != contents.end()) {
+	// 	*logStream << "Total cheese collected: " << it->second->OutputTotalCheeseCollected() << endl;
+	// }
+
 	if (++generation == generations) {
 		EndRun();
 	}
@@ -219,17 +227,23 @@ std::string Simulation::ToString(SimPrintStyleType s)const
 	case SIM_PRINT_ASSESSMENT:
 		break;
 	case SIM_PRINT_GENERATION:
-//		transform(contents.begin(), contents.end(),
-//				  ostream_iterator<string>(out),
-//				  call_on_mem(&pair<const string, SimObject*>::second,
-//							  mem_fun(&SimObject::ToString)));
+		{
+		// transform(contents.begin(), contents.end(),
+		// 		  ostream_iterator<string>(out),
+		// 		  call_on_mem(&pair<const string, SimObject*>::second,
+		// 					  mem_fun(&SimObject::ToString)))
+		// print hello world
+		// out << "Hello World" << endl;
+		
+		for (map<string, SimObject*>::const_iterator i = contents.begin(); i != contents.end(); ++i) {
+			// print OutputTotalCheeseCollected() of MouseSimulation
 
-		for (map<string, SimObject*>::const_iterator i = contents.begin();
-			 i != contents.end(); ++i) {
+			// print the i->first
 			out << i->second->ToString();
 		}
 
 		break;
+	}
 	case SIM_PRINT_RUN: break;
 	case SIM_PRINT_COMPLETE: break;
 	default: break;

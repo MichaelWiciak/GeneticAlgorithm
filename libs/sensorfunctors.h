@@ -14,7 +14,7 @@ namespace BEAST {
 /**
  * Identifies objects belonging to hierarchies, so if defined with Cheese,
  * will return true for objects of type Cheese, or derived classes such as
- * Cheddar and Gruyère.
+ * Cheddar and Gruyï¿½re.
  */
 template <class _ObjectType>
 struct MatchKindOf : public SensorMatchFunction
@@ -27,7 +27,7 @@ struct MatchKindOf : public SensorMatchFunction
 
 /**
  * Identifies exact object types, so if defined with Cheese, will return true
- * only for Cheese, and false for Cheddar and Gruyère.
+ * only for Cheese, and false for Cheddar and Gruyï¿½re.
  */
 template <class _ObjectType>
 struct MatchExact : public SensorMatchFunction
@@ -146,6 +146,93 @@ MatchAdapter<_Functor>* MatchAdapt(_Functor f)
 	return new MatchAdapter<_Functor>(f);
 }
 
+class EvalBinocularVision : public SensorEvalFunction
+{
+public:
+    EvalBinocularVision(WorldObject* o, double leftScope, double rightScope, 
+                        double leftRange, double rightRange,
+                        double leftOrientation, double rightOrientation)
+        : owner(o), 
+          leftScope(leftScope), rightScope(rightScope), 
+          leftRange(leftRange), rightRange(rightRange),
+          leftOrientation(leftOrientation), rightOrientation(rightOrientation),
+          nearestSoFar(leftRange), bestCandidate(NULL), centralCandidate(NULL) {}
+
+    virtual ~EvalBinocularVision() {}
+
+    virtual void Reset()
+    {
+        bestCandidate = NULL;
+        centralCandidate = NULL;
+        nearestSoFar = leftRange;
+        centralNearest = leftRange;
+        seenByLeft = false;
+        seenByRight = false;
+    }
+
+    virtual void operator()(WorldObject* obj, const Vector2D& loc, bool isLeftSensor)
+    {
+        double distance = (owner->GetLocation() - loc).GetLength();
+        
+        // Get the correct range based on which sensor detected it
+        double sensorRange = isLeftSensor ? leftRange : rightRange;
+
+        if (distance > sensorRange)
+            return; // Ignore objects outside the sensor range
+
+        // Update tracking for left and right eye
+        if (isLeftSensor)
+            seenByLeft = true;
+        else
+            seenByRight = true;
+
+        // If seen by both sensors, prefer central vision
+        if (seenByLeft && seenByRight)
+        {
+            if (distance < centralNearest)
+            {
+                centralNearest = distance;
+                centralCandidate = obj;
+            }
+        }
+        else
+        {
+            // If no cheese in central vision, pick the nearest from either eye
+            if (distance < nearestSoFar)
+            {
+                nearestSoFar = distance;
+                bestCandidate = obj;
+            }
+        }
+    }
+
+    virtual void operator()(WorldObject* obj, const Vector2D& loc) override
+    {
+        // Default implementation, you can customize it as needed
+        operator()(obj, loc, true); // Assuming true for isLeftSensor
+    }
+
+    virtual double GetOutput() const
+    {
+        return (centralCandidate != NULL) ? centralNearest : nearestSoFar;
+    }
+
+private:
+    WorldObject* owner;
+    
+    // Separate parameters for each eye
+    double leftScope, rightScope;
+    double leftRange, rightRange;
+    double leftOrientation, rightOrientation;
+
+    double nearestSoFar;
+    double centralNearest;
+    WorldObject* bestCandidate;
+    WorldObject* centralCandidate;
+    bool seenByLeft = false;
+    bool seenByRight = false;
+};
+
 /**
  * Keeps a tally of the nearest point passed in and returns it with GetOutput.
  * Also keeps a pointer to the nearest candidate and a copy of the nearest
@@ -190,6 +277,118 @@ public:
 private:
 	double distance;
 };
+
+// class EvalNearestCombination : public SensorEvalFunction {
+// 	public:
+// 		EvalNearestCombination(Sensor* leftSensor, Sensor* rightSensor, double range)
+// 			: leftSensor(leftSensor), rightSensor(rightSensor), range(range),
+// 			  nearestSoFar(range), bestCandidate(NULL) {}
+	
+// 		virtual ~EvalNearestCombination() {}
+	
+// 		virtual void Reset() {
+// 			bestCandidate = NULL;
+// 			nearestSoFar = range;
+// 			bestCandidateVec = Vector2D(0, 0);
+// 		}
+	
+// 		virtual void operator()(WorldObject* obj, const Vector2D& loc) {
+// 			double leftDistance = (leftSensor->GetLocation() - loc).GetLength();
+// 			double rightDistance = (rightSensor->GetLocation() - loc).GetLength();
+	
+// 			// Check if the object is within the range of both sensors (common vision)
+// 			bool visibleToLeft = leftDistance <= range;
+// 			bool visibleToRight = rightDistance <= range;
+	
+// 			if (visibleToLeft && visibleToRight) {
+// 				// Prioritize objects visible to both sensors (common vision)
+// 				if (leftDistance < nearestSoFar && rightDistance < nearestSoFar) {
+// 					nearestSoFar = std::min(leftDistance, rightDistance);
+// 					bestCandidate = obj;
+// 					bestCandidateVec = loc;
+// 				}
+// 			} else {
+// 				// If not visible to both, consider the nearest object seen by either sensor
+// 				if (visibleToLeft && leftDistance < nearestSoFar) {
+// 					nearestSoFar = leftDistance;
+// 					bestCandidate = obj;
+// 					bestCandidateVec = loc;
+// 				} else if (visibleToRight && rightDistance < nearestSoFar) {
+// 					nearestSoFar = rightDistance;
+// 					bestCandidate = obj;
+// 					bestCandidateVec = loc;
+// 				}
+// 			}
+// 		}
+	
+// 		virtual double GetOutput() const {
+// 			return nearestSoFar;
+// 		}
+	
+// 	private:
+// 		Sensor* leftSensor;
+// 		Sensor* rightSensor;
+// 		double range;
+// 		double nearestSoFar;
+// 		WorldObject* bestCandidate;
+// 		Vector2D bestCandidateVec;
+// 	};
+
+class EvalNearestCombination : public SensorEvalFunction {
+	public:
+		EvalNearestCombination(Sensor* leftSensor, Sensor* rightSensor, double range)
+			: leftSensor(leftSensor), rightSensor(rightSensor), range(range),
+			  nearestSoFar(range), bestCandidate(nullptr) {}
+	
+		virtual ~EvalNearestCombination() {}
+	
+		virtual void Reset() override {
+			bestCandidate = nullptr;
+			nearestSoFar = range;
+			bestCandidateVec = Vector2D(0, 0);
+		}
+	
+		virtual void operator()(WorldObject* obj, const Vector2D& loc) override {
+			// Calculate distances from both sensors
+			double leftDistance = (leftSensor->GetLocation() - loc).GetLength();
+			double rightDistance = (rightSensor->GetLocation() - loc).GetLength();
+	
+			bool visibleToLeft = leftDistance <= range;
+			bool visibleToRight = rightDistance <= range;
+	
+			// Handle objects visible to both sensors
+			if (visibleToLeft && visibleToRight) {
+				if (leftDistance < nearestSoFar || rightDistance < nearestSoFar) {
+					nearestSoFar = std::min(leftDistance, rightDistance);
+					bestCandidate = obj;
+					bestCandidateVec = loc;
+				}
+			}
+			// Handle objects visible to only one sensor
+			else if (visibleToLeft && leftDistance < nearestSoFar) {
+				nearestSoFar = leftDistance;
+				bestCandidate = obj;
+				bestCandidateVec = loc;
+			} else if (visibleToRight && rightDistance < nearestSoFar) {
+				nearestSoFar = rightDistance;
+				bestCandidate = obj;
+				bestCandidateVec = loc;
+			}
+		}
+	
+		virtual double GetOutput() const override {
+			return nearestSoFar;
+		}
+	
+	private:
+		Sensor* leftSensor;
+		Sensor* rightSensor;
+		double range;
+		double nearestSoFar;
+		WorldObject* bestCandidate;
+		Vector2D bestCandidateVec;
+	};
+	
 
 /**
  * Returns the vertical distance to the nearest target. Most effective when
@@ -270,6 +469,10 @@ public:
 	}
 };
 
+
+
+
+
 /*
  * Keeps a total of every time it's called per round. Starting count may
  * be defined but defaults to 0.
@@ -295,6 +498,10 @@ private:
 	const int startingCount;
 	int numberSoFar;
 };
+
+
+
+
 
 /**
  * ScaleCompose allows the chaining of two scaling functions together, such

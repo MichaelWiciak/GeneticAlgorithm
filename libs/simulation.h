@@ -77,6 +77,11 @@ public:
 
 	virtual std::string ToString()const{ return ""; }
 
+	std::string OutputTotalCheeseCollected()
+	{
+		return "Total cheese collected: hi";
+	}
+
 private:
 	/// A pointer to the World this Population belongs to
 	World*			myWorld;
