@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /uolstore/home/users/ed203mw/GeneticAlgorithm
+CMAKE_SOURCE_DIR = /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /uolstore/home/users/ed203mw/GeneticAlgorithm/build
+CMAKE_BINARY_DIR = /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build
 
 # Include any dependencies generated for this target.
 include libs/CMakeFiles/BEASTLIB.dir/depend.make
@@ -70,270 +70,270 @@ include libs/CMakeFiles/BEASTLIB.dir/progress.make
 include libs/CMakeFiles/BEASTLIB.dir/flags.make
 
 libs/CMakeFiles/BEASTLIB.dir/animat.cc.o: libs/CMakeFiles/BEASTLIB.dir/flags.make
-libs/CMakeFiles/BEASTLIB.dir/animat.cc.o: /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/animat.cc
+libs/CMakeFiles/BEASTLIB.dir/animat.cc.o: /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/animat.cc
 libs/CMakeFiles/BEASTLIB.dir/animat.cc.o: libs/CMakeFiles/BEASTLIB.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/animat.cc.o"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/animat.cc.o -MF CMakeFiles/BEASTLIB.dir/animat.cc.o.d -o CMakeFiles/BEASTLIB.dir/animat.cc.o -c /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/animat.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/animat.cc.o"
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/animat.cc.o -MF CMakeFiles/BEASTLIB.dir/animat.cc.o.d -o CMakeFiles/BEASTLIB.dir/animat.cc.o -c /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/animat.cc
 
 libs/CMakeFiles/BEASTLIB.dir/animat.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BEASTLIB.dir/animat.cc.i"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/animat.cc > CMakeFiles/BEASTLIB.dir/animat.cc.i
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/animat.cc > CMakeFiles/BEASTLIB.dir/animat.cc.i
 
 libs/CMakeFiles/BEASTLIB.dir/animat.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BEASTLIB.dir/animat.cc.s"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/animat.cc -o CMakeFiles/BEASTLIB.dir/animat.cc.s
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/animat.cc -o CMakeFiles/BEASTLIB.dir/animat.cc.s
 
 libs/CMakeFiles/BEASTLIB.dir/animatmonitor.cc.o: libs/CMakeFiles/BEASTLIB.dir/flags.make
-libs/CMakeFiles/BEASTLIB.dir/animatmonitor.cc.o: /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/animatmonitor.cc
+libs/CMakeFiles/BEASTLIB.dir/animatmonitor.cc.o: /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/animatmonitor.cc
 libs/CMakeFiles/BEASTLIB.dir/animatmonitor.cc.o: libs/CMakeFiles/BEASTLIB.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/animatmonitor.cc.o"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/animatmonitor.cc.o -MF CMakeFiles/BEASTLIB.dir/animatmonitor.cc.o.d -o CMakeFiles/BEASTLIB.dir/animatmonitor.cc.o -c /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/animatmonitor.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/animatmonitor.cc.o"
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/animatmonitor.cc.o -MF CMakeFiles/BEASTLIB.dir/animatmonitor.cc.o.d -o CMakeFiles/BEASTLIB.dir/animatmonitor.cc.o -c /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/animatmonitor.cc
 
 libs/CMakeFiles/BEASTLIB.dir/animatmonitor.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BEASTLIB.dir/animatmonitor.cc.i"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/animatmonitor.cc > CMakeFiles/BEASTLIB.dir/animatmonitor.cc.i
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/animatmonitor.cc > CMakeFiles/BEASTLIB.dir/animatmonitor.cc.i
 
 libs/CMakeFiles/BEASTLIB.dir/animatmonitor.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BEASTLIB.dir/animatmonitor.cc.s"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/animatmonitor.cc -o CMakeFiles/BEASTLIB.dir/animatmonitor.cc.s
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/animatmonitor.cc -o CMakeFiles/BEASTLIB.dir/animatmonitor.cc.s
 
 libs/CMakeFiles/BEASTLIB.dir/bacteria.cc.o: libs/CMakeFiles/BEASTLIB.dir/flags.make
-libs/CMakeFiles/BEASTLIB.dir/bacteria.cc.o: /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/bacteria.cc
+libs/CMakeFiles/BEASTLIB.dir/bacteria.cc.o: /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/bacteria.cc
 libs/CMakeFiles/BEASTLIB.dir/bacteria.cc.o: libs/CMakeFiles/BEASTLIB.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/bacteria.cc.o"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/bacteria.cc.o -MF CMakeFiles/BEASTLIB.dir/bacteria.cc.o.d -o CMakeFiles/BEASTLIB.dir/bacteria.cc.o -c /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/bacteria.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/bacteria.cc.o"
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/bacteria.cc.o -MF CMakeFiles/BEASTLIB.dir/bacteria.cc.o.d -o CMakeFiles/BEASTLIB.dir/bacteria.cc.o -c /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/bacteria.cc
 
 libs/CMakeFiles/BEASTLIB.dir/bacteria.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BEASTLIB.dir/bacteria.cc.i"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/bacteria.cc > CMakeFiles/BEASTLIB.dir/bacteria.cc.i
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/bacteria.cc > CMakeFiles/BEASTLIB.dir/bacteria.cc.i
 
 libs/CMakeFiles/BEASTLIB.dir/bacteria.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BEASTLIB.dir/bacteria.cc.s"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/bacteria.cc -o CMakeFiles/BEASTLIB.dir/bacteria.cc.s
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/bacteria.cc -o CMakeFiles/BEASTLIB.dir/bacteria.cc.s
 
 libs/CMakeFiles/BEASTLIB.dir/bacterium.cc.o: libs/CMakeFiles/BEASTLIB.dir/flags.make
-libs/CMakeFiles/BEASTLIB.dir/bacterium.cc.o: /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/bacterium.cc
+libs/CMakeFiles/BEASTLIB.dir/bacterium.cc.o: /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/bacterium.cc
 libs/CMakeFiles/BEASTLIB.dir/bacterium.cc.o: libs/CMakeFiles/BEASTLIB.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/bacterium.cc.o"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/bacterium.cc.o -MF CMakeFiles/BEASTLIB.dir/bacterium.cc.o.d -o CMakeFiles/BEASTLIB.dir/bacterium.cc.o -c /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/bacterium.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/bacterium.cc.o"
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/bacterium.cc.o -MF CMakeFiles/BEASTLIB.dir/bacterium.cc.o.d -o CMakeFiles/BEASTLIB.dir/bacterium.cc.o -c /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/bacterium.cc
 
 libs/CMakeFiles/BEASTLIB.dir/bacterium.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BEASTLIB.dir/bacterium.cc.i"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/bacterium.cc > CMakeFiles/BEASTLIB.dir/bacterium.cc.i
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/bacterium.cc > CMakeFiles/BEASTLIB.dir/bacterium.cc.i
 
 libs/CMakeFiles/BEASTLIB.dir/bacterium.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BEASTLIB.dir/bacterium.cc.s"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/bacterium.cc -o CMakeFiles/BEASTLIB.dir/bacterium.cc.s
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/bacterium.cc -o CMakeFiles/BEASTLIB.dir/bacterium.cc.s
 
 libs/CMakeFiles/BEASTLIB.dir/beast.cc.o: libs/CMakeFiles/BEASTLIB.dir/flags.make
-libs/CMakeFiles/BEASTLIB.dir/beast.cc.o: /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/beast.cc
+libs/CMakeFiles/BEASTLIB.dir/beast.cc.o: /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/beast.cc
 libs/CMakeFiles/BEASTLIB.dir/beast.cc.o: libs/CMakeFiles/BEASTLIB.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/beast.cc.o"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/beast.cc.o -MF CMakeFiles/BEASTLIB.dir/beast.cc.o.d -o CMakeFiles/BEASTLIB.dir/beast.cc.o -c /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/beast.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/beast.cc.o"
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/beast.cc.o -MF CMakeFiles/BEASTLIB.dir/beast.cc.o.d -o CMakeFiles/BEASTLIB.dir/beast.cc.o -c /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/beast.cc
 
 libs/CMakeFiles/BEASTLIB.dir/beast.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BEASTLIB.dir/beast.cc.i"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/beast.cc > CMakeFiles/BEASTLIB.dir/beast.cc.i
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/beast.cc > CMakeFiles/BEASTLIB.dir/beast.cc.i
 
 libs/CMakeFiles/BEASTLIB.dir/beast.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BEASTLIB.dir/beast.cc.s"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/beast.cc -o CMakeFiles/BEASTLIB.dir/beast.cc.s
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/beast.cc -o CMakeFiles/BEASTLIB.dir/beast.cc.s
 
 libs/CMakeFiles/BEASTLIB.dir/collisions.cc.o: libs/CMakeFiles/BEASTLIB.dir/flags.make
-libs/CMakeFiles/BEASTLIB.dir/collisions.cc.o: /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/collisions.cc
+libs/CMakeFiles/BEASTLIB.dir/collisions.cc.o: /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/collisions.cc
 libs/CMakeFiles/BEASTLIB.dir/collisions.cc.o: libs/CMakeFiles/BEASTLIB.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/collisions.cc.o"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/collisions.cc.o -MF CMakeFiles/BEASTLIB.dir/collisions.cc.o.d -o CMakeFiles/BEASTLIB.dir/collisions.cc.o -c /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/collisions.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/collisions.cc.o"
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/collisions.cc.o -MF CMakeFiles/BEASTLIB.dir/collisions.cc.o.d -o CMakeFiles/BEASTLIB.dir/collisions.cc.o -c /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/collisions.cc
 
 libs/CMakeFiles/BEASTLIB.dir/collisions.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BEASTLIB.dir/collisions.cc.i"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/collisions.cc > CMakeFiles/BEASTLIB.dir/collisions.cc.i
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/collisions.cc > CMakeFiles/BEASTLIB.dir/collisions.cc.i
 
 libs/CMakeFiles/BEASTLIB.dir/collisions.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BEASTLIB.dir/collisions.cc.s"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/collisions.cc -o CMakeFiles/BEASTLIB.dir/collisions.cc.s
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/collisions.cc -o CMakeFiles/BEASTLIB.dir/collisions.cc.s
 
 libs/CMakeFiles/BEASTLIB.dir/distribution.cc.o: libs/CMakeFiles/BEASTLIB.dir/flags.make
-libs/CMakeFiles/BEASTLIB.dir/distribution.cc.o: /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/distribution.cc
+libs/CMakeFiles/BEASTLIB.dir/distribution.cc.o: /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/distribution.cc
 libs/CMakeFiles/BEASTLIB.dir/distribution.cc.o: libs/CMakeFiles/BEASTLIB.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/distribution.cc.o"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/distribution.cc.o -MF CMakeFiles/BEASTLIB.dir/distribution.cc.o.d -o CMakeFiles/BEASTLIB.dir/distribution.cc.o -c /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/distribution.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/distribution.cc.o"
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/distribution.cc.o -MF CMakeFiles/BEASTLIB.dir/distribution.cc.o.d -o CMakeFiles/BEASTLIB.dir/distribution.cc.o -c /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/distribution.cc
 
 libs/CMakeFiles/BEASTLIB.dir/distribution.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BEASTLIB.dir/distribution.cc.i"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/distribution.cc > CMakeFiles/BEASTLIB.dir/distribution.cc.i
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/distribution.cc > CMakeFiles/BEASTLIB.dir/distribution.cc.i
 
 libs/CMakeFiles/BEASTLIB.dir/distribution.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BEASTLIB.dir/distribution.cc.s"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/distribution.cc -o CMakeFiles/BEASTLIB.dir/distribution.cc.s
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/distribution.cc -o CMakeFiles/BEASTLIB.dir/distribution.cc.s
 
 libs/CMakeFiles/BEASTLIB.dir/drawable.cc.o: libs/CMakeFiles/BEASTLIB.dir/flags.make
-libs/CMakeFiles/BEASTLIB.dir/drawable.cc.o: /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/drawable.cc
+libs/CMakeFiles/BEASTLIB.dir/drawable.cc.o: /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/drawable.cc
 libs/CMakeFiles/BEASTLIB.dir/drawable.cc.o: libs/CMakeFiles/BEASTLIB.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/drawable.cc.o"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/drawable.cc.o -MF CMakeFiles/BEASTLIB.dir/drawable.cc.o.d -o CMakeFiles/BEASTLIB.dir/drawable.cc.o -c /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/drawable.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/drawable.cc.o"
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/drawable.cc.o -MF CMakeFiles/BEASTLIB.dir/drawable.cc.o.d -o CMakeFiles/BEASTLIB.dir/drawable.cc.o -c /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/drawable.cc
 
 libs/CMakeFiles/BEASTLIB.dir/drawable.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BEASTLIB.dir/drawable.cc.i"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/drawable.cc > CMakeFiles/BEASTLIB.dir/drawable.cc.i
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/drawable.cc > CMakeFiles/BEASTLIB.dir/drawable.cc.i
 
 libs/CMakeFiles/BEASTLIB.dir/drawable.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BEASTLIB.dir/drawable.cc.s"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/drawable.cc -o CMakeFiles/BEASTLIB.dir/drawable.cc.s
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/drawable.cc -o CMakeFiles/BEASTLIB.dir/drawable.cc.s
 
 libs/CMakeFiles/BEASTLIB.dir/dynamicalnet.cc.o: libs/CMakeFiles/BEASTLIB.dir/flags.make
-libs/CMakeFiles/BEASTLIB.dir/dynamicalnet.cc.o: /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/dynamicalnet.cc
+libs/CMakeFiles/BEASTLIB.dir/dynamicalnet.cc.o: /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/dynamicalnet.cc
 libs/CMakeFiles/BEASTLIB.dir/dynamicalnet.cc.o: libs/CMakeFiles/BEASTLIB.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/dynamicalnet.cc.o"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/dynamicalnet.cc.o -MF CMakeFiles/BEASTLIB.dir/dynamicalnet.cc.o.d -o CMakeFiles/BEASTLIB.dir/dynamicalnet.cc.o -c /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/dynamicalnet.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/dynamicalnet.cc.o"
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/dynamicalnet.cc.o -MF CMakeFiles/BEASTLIB.dir/dynamicalnet.cc.o.d -o CMakeFiles/BEASTLIB.dir/dynamicalnet.cc.o -c /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/dynamicalnet.cc
 
 libs/CMakeFiles/BEASTLIB.dir/dynamicalnet.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BEASTLIB.dir/dynamicalnet.cc.i"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/dynamicalnet.cc > CMakeFiles/BEASTLIB.dir/dynamicalnet.cc.i
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/dynamicalnet.cc > CMakeFiles/BEASTLIB.dir/dynamicalnet.cc.i
 
 libs/CMakeFiles/BEASTLIB.dir/dynamicalnet.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BEASTLIB.dir/dynamicalnet.cc.s"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/dynamicalnet.cc -o CMakeFiles/BEASTLIB.dir/dynamicalnet.cc.s
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/dynamicalnet.cc -o CMakeFiles/BEASTLIB.dir/dynamicalnet.cc.s
 
 libs/CMakeFiles/BEASTLIB.dir/feedforwardnet.cc.o: libs/CMakeFiles/BEASTLIB.dir/flags.make
-libs/CMakeFiles/BEASTLIB.dir/feedforwardnet.cc.o: /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/feedforwardnet.cc
+libs/CMakeFiles/BEASTLIB.dir/feedforwardnet.cc.o: /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/feedforwardnet.cc
 libs/CMakeFiles/BEASTLIB.dir/feedforwardnet.cc.o: libs/CMakeFiles/BEASTLIB.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/feedforwardnet.cc.o"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/feedforwardnet.cc.o -MF CMakeFiles/BEASTLIB.dir/feedforwardnet.cc.o.d -o CMakeFiles/BEASTLIB.dir/feedforwardnet.cc.o -c /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/feedforwardnet.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/feedforwardnet.cc.o"
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/feedforwardnet.cc.o -MF CMakeFiles/BEASTLIB.dir/feedforwardnet.cc.o.d -o CMakeFiles/BEASTLIB.dir/feedforwardnet.cc.o -c /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/feedforwardnet.cc
 
 libs/CMakeFiles/BEASTLIB.dir/feedforwardnet.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BEASTLIB.dir/feedforwardnet.cc.i"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/feedforwardnet.cc > CMakeFiles/BEASTLIB.dir/feedforwardnet.cc.i
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/feedforwardnet.cc > CMakeFiles/BEASTLIB.dir/feedforwardnet.cc.i
 
 libs/CMakeFiles/BEASTLIB.dir/feedforwardnet.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BEASTLIB.dir/feedforwardnet.cc.s"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/feedforwardnet.cc -o CMakeFiles/BEASTLIB.dir/feedforwardnet.cc.s
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/feedforwardnet.cc -o CMakeFiles/BEASTLIB.dir/feedforwardnet.cc.s
 
 libs/CMakeFiles/BEASTLIB.dir/glut.cc.o: libs/CMakeFiles/BEASTLIB.dir/flags.make
-libs/CMakeFiles/BEASTLIB.dir/glut.cc.o: /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/glut.cc
+libs/CMakeFiles/BEASTLIB.dir/glut.cc.o: /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/glut.cc
 libs/CMakeFiles/BEASTLIB.dir/glut.cc.o: libs/CMakeFiles/BEASTLIB.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/glut.cc.o"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/glut.cc.o -MF CMakeFiles/BEASTLIB.dir/glut.cc.o.d -o CMakeFiles/BEASTLIB.dir/glut.cc.o -c /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/glut.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/glut.cc.o"
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/glut.cc.o -MF CMakeFiles/BEASTLIB.dir/glut.cc.o.d -o CMakeFiles/BEASTLIB.dir/glut.cc.o -c /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/glut.cc
 
 libs/CMakeFiles/BEASTLIB.dir/glut.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BEASTLIB.dir/glut.cc.i"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/glut.cc > CMakeFiles/BEASTLIB.dir/glut.cc.i
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/glut.cc > CMakeFiles/BEASTLIB.dir/glut.cc.i
 
 libs/CMakeFiles/BEASTLIB.dir/glut.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BEASTLIB.dir/glut.cc.s"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/glut.cc -o CMakeFiles/BEASTLIB.dir/glut.cc.s
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/glut.cc -o CMakeFiles/BEASTLIB.dir/glut.cc.s
 
 libs/CMakeFiles/BEASTLIB.dir/neuralanimat.cc.o: libs/CMakeFiles/BEASTLIB.dir/flags.make
-libs/CMakeFiles/BEASTLIB.dir/neuralanimat.cc.o: /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/neuralanimat.cc
+libs/CMakeFiles/BEASTLIB.dir/neuralanimat.cc.o: /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/neuralanimat.cc
 libs/CMakeFiles/BEASTLIB.dir/neuralanimat.cc.o: libs/CMakeFiles/BEASTLIB.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/neuralanimat.cc.o"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/neuralanimat.cc.o -MF CMakeFiles/BEASTLIB.dir/neuralanimat.cc.o.d -o CMakeFiles/BEASTLIB.dir/neuralanimat.cc.o -c /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/neuralanimat.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/neuralanimat.cc.o"
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/neuralanimat.cc.o -MF CMakeFiles/BEASTLIB.dir/neuralanimat.cc.o.d -o CMakeFiles/BEASTLIB.dir/neuralanimat.cc.o -c /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/neuralanimat.cc
 
 libs/CMakeFiles/BEASTLIB.dir/neuralanimat.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BEASTLIB.dir/neuralanimat.cc.i"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/neuralanimat.cc > CMakeFiles/BEASTLIB.dir/neuralanimat.cc.i
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/neuralanimat.cc > CMakeFiles/BEASTLIB.dir/neuralanimat.cc.i
 
 libs/CMakeFiles/BEASTLIB.dir/neuralanimat.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BEASTLIB.dir/neuralanimat.cc.s"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/neuralanimat.cc -o CMakeFiles/BEASTLIB.dir/neuralanimat.cc.s
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/neuralanimat.cc -o CMakeFiles/BEASTLIB.dir/neuralanimat.cc.s
 
 libs/CMakeFiles/BEASTLIB.dir/sensor.cc.o: libs/CMakeFiles/BEASTLIB.dir/flags.make
-libs/CMakeFiles/BEASTLIB.dir/sensor.cc.o: /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/sensor.cc
+libs/CMakeFiles/BEASTLIB.dir/sensor.cc.o: /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/sensor.cc
 libs/CMakeFiles/BEASTLIB.dir/sensor.cc.o: libs/CMakeFiles/BEASTLIB.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/sensor.cc.o"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/sensor.cc.o -MF CMakeFiles/BEASTLIB.dir/sensor.cc.o.d -o CMakeFiles/BEASTLIB.dir/sensor.cc.o -c /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/sensor.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/sensor.cc.o"
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/sensor.cc.o -MF CMakeFiles/BEASTLIB.dir/sensor.cc.o.d -o CMakeFiles/BEASTLIB.dir/sensor.cc.o -c /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/sensor.cc
 
 libs/CMakeFiles/BEASTLIB.dir/sensor.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BEASTLIB.dir/sensor.cc.i"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/sensor.cc > CMakeFiles/BEASTLIB.dir/sensor.cc.i
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/sensor.cc > CMakeFiles/BEASTLIB.dir/sensor.cc.i
 
 libs/CMakeFiles/BEASTLIB.dir/sensor.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BEASTLIB.dir/sensor.cc.s"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/sensor.cc -o CMakeFiles/BEASTLIB.dir/sensor.cc.s
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/sensor.cc -o CMakeFiles/BEASTLIB.dir/sensor.cc.s
 
 libs/CMakeFiles/BEASTLIB.dir/serialfuncs.cc.o: libs/CMakeFiles/BEASTLIB.dir/flags.make
-libs/CMakeFiles/BEASTLIB.dir/serialfuncs.cc.o: /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/serialfuncs.cc
+libs/CMakeFiles/BEASTLIB.dir/serialfuncs.cc.o: /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/serialfuncs.cc
 libs/CMakeFiles/BEASTLIB.dir/serialfuncs.cc.o: libs/CMakeFiles/BEASTLIB.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/serialfuncs.cc.o"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/serialfuncs.cc.o -MF CMakeFiles/BEASTLIB.dir/serialfuncs.cc.o.d -o CMakeFiles/BEASTLIB.dir/serialfuncs.cc.o -c /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/serialfuncs.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/serialfuncs.cc.o"
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/serialfuncs.cc.o -MF CMakeFiles/BEASTLIB.dir/serialfuncs.cc.o.d -o CMakeFiles/BEASTLIB.dir/serialfuncs.cc.o -c /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/serialfuncs.cc
 
 libs/CMakeFiles/BEASTLIB.dir/serialfuncs.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BEASTLIB.dir/serialfuncs.cc.i"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/serialfuncs.cc > CMakeFiles/BEASTLIB.dir/serialfuncs.cc.i
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/serialfuncs.cc > CMakeFiles/BEASTLIB.dir/serialfuncs.cc.i
 
 libs/CMakeFiles/BEASTLIB.dir/serialfuncs.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BEASTLIB.dir/serialfuncs.cc.s"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/serialfuncs.cc -o CMakeFiles/BEASTLIB.dir/serialfuncs.cc.s
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/serialfuncs.cc -o CMakeFiles/BEASTLIB.dir/serialfuncs.cc.s
 
 libs/CMakeFiles/BEASTLIB.dir/simulation.cc.o: libs/CMakeFiles/BEASTLIB.dir/flags.make
-libs/CMakeFiles/BEASTLIB.dir/simulation.cc.o: /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/simulation.cc
+libs/CMakeFiles/BEASTLIB.dir/simulation.cc.o: /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/simulation.cc
 libs/CMakeFiles/BEASTLIB.dir/simulation.cc.o: libs/CMakeFiles/BEASTLIB.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/simulation.cc.o"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/simulation.cc.o -MF CMakeFiles/BEASTLIB.dir/simulation.cc.o.d -o CMakeFiles/BEASTLIB.dir/simulation.cc.o -c /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/simulation.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/simulation.cc.o"
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/simulation.cc.o -MF CMakeFiles/BEASTLIB.dir/simulation.cc.o.d -o CMakeFiles/BEASTLIB.dir/simulation.cc.o -c /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/simulation.cc
 
 libs/CMakeFiles/BEASTLIB.dir/simulation.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BEASTLIB.dir/simulation.cc.i"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/simulation.cc > CMakeFiles/BEASTLIB.dir/simulation.cc.i
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/simulation.cc > CMakeFiles/BEASTLIB.dir/simulation.cc.i
 
 libs/CMakeFiles/BEASTLIB.dir/simulation.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BEASTLIB.dir/simulation.cc.s"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/simulation.cc -o CMakeFiles/BEASTLIB.dir/simulation.cc.s
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/simulation.cc -o CMakeFiles/BEASTLIB.dir/simulation.cc.s
 
 libs/CMakeFiles/BEASTLIB.dir/trail.cc.o: libs/CMakeFiles/BEASTLIB.dir/flags.make
-libs/CMakeFiles/BEASTLIB.dir/trail.cc.o: /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/trail.cc
+libs/CMakeFiles/BEASTLIB.dir/trail.cc.o: /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/trail.cc
 libs/CMakeFiles/BEASTLIB.dir/trail.cc.o: libs/CMakeFiles/BEASTLIB.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/trail.cc.o"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/trail.cc.o -MF CMakeFiles/BEASTLIB.dir/trail.cc.o.d -o CMakeFiles/BEASTLIB.dir/trail.cc.o -c /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/trail.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/trail.cc.o"
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/trail.cc.o -MF CMakeFiles/BEASTLIB.dir/trail.cc.o.d -o CMakeFiles/BEASTLIB.dir/trail.cc.o -c /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/trail.cc
 
 libs/CMakeFiles/BEASTLIB.dir/trail.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BEASTLIB.dir/trail.cc.i"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/trail.cc > CMakeFiles/BEASTLIB.dir/trail.cc.i
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/trail.cc > CMakeFiles/BEASTLIB.dir/trail.cc.i
 
 libs/CMakeFiles/BEASTLIB.dir/trail.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BEASTLIB.dir/trail.cc.s"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/trail.cc -o CMakeFiles/BEASTLIB.dir/trail.cc.s
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/trail.cc -o CMakeFiles/BEASTLIB.dir/trail.cc.s
 
 libs/CMakeFiles/BEASTLIB.dir/unserialiser.cc.o: libs/CMakeFiles/BEASTLIB.dir/flags.make
-libs/CMakeFiles/BEASTLIB.dir/unserialiser.cc.o: /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/unserialiser.cc
+libs/CMakeFiles/BEASTLIB.dir/unserialiser.cc.o: /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/unserialiser.cc
 libs/CMakeFiles/BEASTLIB.dir/unserialiser.cc.o: libs/CMakeFiles/BEASTLIB.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/unserialiser.cc.o"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/unserialiser.cc.o -MF CMakeFiles/BEASTLIB.dir/unserialiser.cc.o.d -o CMakeFiles/BEASTLIB.dir/unserialiser.cc.o -c /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/unserialiser.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/unserialiser.cc.o"
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/unserialiser.cc.o -MF CMakeFiles/BEASTLIB.dir/unserialiser.cc.o.d -o CMakeFiles/BEASTLIB.dir/unserialiser.cc.o -c /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/unserialiser.cc
 
 libs/CMakeFiles/BEASTLIB.dir/unserialiser.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BEASTLIB.dir/unserialiser.cc.i"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/unserialiser.cc > CMakeFiles/BEASTLIB.dir/unserialiser.cc.i
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/unserialiser.cc > CMakeFiles/BEASTLIB.dir/unserialiser.cc.i
 
 libs/CMakeFiles/BEASTLIB.dir/unserialiser.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BEASTLIB.dir/unserialiser.cc.s"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/unserialiser.cc -o CMakeFiles/BEASTLIB.dir/unserialiser.cc.s
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/unserialiser.cc -o CMakeFiles/BEASTLIB.dir/unserialiser.cc.s
 
 libs/CMakeFiles/BEASTLIB.dir/world.cc.o: libs/CMakeFiles/BEASTLIB.dir/flags.make
-libs/CMakeFiles/BEASTLIB.dir/world.cc.o: /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/world.cc
+libs/CMakeFiles/BEASTLIB.dir/world.cc.o: /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/world.cc
 libs/CMakeFiles/BEASTLIB.dir/world.cc.o: libs/CMakeFiles/BEASTLIB.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/world.cc.o"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/world.cc.o -MF CMakeFiles/BEASTLIB.dir/world.cc.o.d -o CMakeFiles/BEASTLIB.dir/world.cc.o -c /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/world.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/world.cc.o"
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/world.cc.o -MF CMakeFiles/BEASTLIB.dir/world.cc.o.d -o CMakeFiles/BEASTLIB.dir/world.cc.o -c /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/world.cc
 
 libs/CMakeFiles/BEASTLIB.dir/world.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BEASTLIB.dir/world.cc.i"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/world.cc > CMakeFiles/BEASTLIB.dir/world.cc.i
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/world.cc > CMakeFiles/BEASTLIB.dir/world.cc.i
 
 libs/CMakeFiles/BEASTLIB.dir/world.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BEASTLIB.dir/world.cc.s"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/world.cc -o CMakeFiles/BEASTLIB.dir/world.cc.s
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/world.cc -o CMakeFiles/BEASTLIB.dir/world.cc.s
 
 libs/CMakeFiles/BEASTLIB.dir/worldobject.cc.o: libs/CMakeFiles/BEASTLIB.dir/flags.make
-libs/CMakeFiles/BEASTLIB.dir/worldobject.cc.o: /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/worldobject.cc
+libs/CMakeFiles/BEASTLIB.dir/worldobject.cc.o: /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/worldobject.cc
 libs/CMakeFiles/BEASTLIB.dir/worldobject.cc.o: libs/CMakeFiles/BEASTLIB.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/worldobject.cc.o"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/worldobject.cc.o -MF CMakeFiles/BEASTLIB.dir/worldobject.cc.o.d -o CMakeFiles/BEASTLIB.dir/worldobject.cc.o -c /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/worldobject.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object libs/CMakeFiles/BEASTLIB.dir/worldobject.cc.o"
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/BEASTLIB.dir/worldobject.cc.o -MF CMakeFiles/BEASTLIB.dir/worldobject.cc.o.d -o CMakeFiles/BEASTLIB.dir/worldobject.cc.o -c /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/worldobject.cc
 
 libs/CMakeFiles/BEASTLIB.dir/worldobject.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BEASTLIB.dir/worldobject.cc.i"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/worldobject.cc > CMakeFiles/BEASTLIB.dir/worldobject.cc.i
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/worldobject.cc > CMakeFiles/BEASTLIB.dir/worldobject.cc.i
 
 libs/CMakeFiles/BEASTLIB.dir/worldobject.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BEASTLIB.dir/worldobject.cc.s"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/users/ed203mw/GeneticAlgorithm/libs/worldobject.cc -o CMakeFiles/BEASTLIB.dir/worldobject.cc.s
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/worldobject.cc -o CMakeFiles/BEASTLIB.dir/worldobject.cc.s
 
 # Object files for target BEASTLIB
 BEASTLIB_OBJECTS = \
@@ -381,18 +381,18 @@ libs/libBEASTLIB.so: libs/CMakeFiles/BEASTLIB.dir/world.cc.o
 libs/libBEASTLIB.so: libs/CMakeFiles/BEASTLIB.dir/worldobject.cc.o
 libs/libBEASTLIB.so: libs/CMakeFiles/BEASTLIB.dir/build.make
 libs/libBEASTLIB.so: libs/CMakeFiles/BEASTLIB.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/uolstore/home/users/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX shared library libBEASTLIB.so"
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BEASTLIB.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX shared library libBEASTLIB.so"
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BEASTLIB.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 libs/CMakeFiles/BEASTLIB.dir/build: libs/libBEASTLIB.so
 .PHONY : libs/CMakeFiles/BEASTLIB.dir/build
 
 libs/CMakeFiles/BEASTLIB.dir/clean:
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs && $(CMAKE_COMMAND) -P CMakeFiles/BEASTLIB.dir/cmake_clean.cmake
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs && $(CMAKE_COMMAND) -P CMakeFiles/BEASTLIB.dir/cmake_clean.cmake
 .PHONY : libs/CMakeFiles/BEASTLIB.dir/clean
 
 libs/CMakeFiles/BEASTLIB.dir/depend:
-	cd /uolstore/home/users/ed203mw/GeneticAlgorithm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /uolstore/home/users/ed203mw/GeneticAlgorithm /uolstore/home/users/ed203mw/GeneticAlgorithm/libs /uolstore/home/users/ed203mw/GeneticAlgorithm/build /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs /uolstore/home/users/ed203mw/GeneticAlgorithm/build/libs/CMakeFiles/BEASTLIB.dir/DependInfo.cmake --color=$(COLOR)
+	cd /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs /uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/build/libs/CMakeFiles/BEASTLIB.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : libs/CMakeFiles/BEASTLIB.dir/depend
 

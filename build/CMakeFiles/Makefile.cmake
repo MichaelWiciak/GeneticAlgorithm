@@ -7,13 +7,13 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/uolstore/home/users/ed203mw/GeneticAlgorithm/CMakeLists.txt"
-  "/uolstore/home/users/ed203mw/GeneticAlgorithm/apps/CMakeLists.txt"
+  "/uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/CMakeLists.txt"
+  "/uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/apps/CMakeLists.txt"
   "CMakeFiles/3.26.5/CMakeCCompiler.cmake"
   "CMakeFiles/3.26.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.26.5/CMakeSystem.cmake"
-  "/uolstore/home/users/ed203mw/GeneticAlgorithm/libs/CMakeLists.txt"
-  "/uolstore/home/users/ed203mw/GeneticAlgorithm/projects/CMakeLists.txt"
+  "/uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/libs/CMakeLists.txt"
+  "/uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/projects/CMakeLists.txt"
   "/usr/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"

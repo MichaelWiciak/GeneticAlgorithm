@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/uolstore/home/users/ed203mw/GeneticAlgorithm/projects/mouse.cc" "projects/CMakeFiles/mouse.dir/mouse.cc.o" "gcc" "projects/CMakeFiles/mouse.dir/mouse.cc.o.d"
+  "/uolstore/home/student_lnxhome01/ed203mw/GeneticAlgorithm/projects/mouse.cc" "projects/CMakeFiles/mouse.dir/mouse.cc.o" "gcc" "projects/CMakeFiles/mouse.dir/mouse.cc.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

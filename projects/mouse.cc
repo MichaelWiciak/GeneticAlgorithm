@@ -105,7 +105,7 @@ private:
 // it's more convenient to inherit from EvoFFNAnimat which gives us all
 // the GA and FFN code. Multiple inheritance would be another option, but
 // introduces a host of other unwanted complications.
-class EvoMouse : public  EvoFFNAnimat //EvoDNNAnimat //
+class EvoMouse : public  EvoDNNAnimat //EvoFFNAnimat //
 {
 public:
 	static int totalCheeseAvailable; // Total cheese in the environment
@@ -116,14 +116,13 @@ public:
 // An alternative to the NearestAngleSensor is the Proximity Sensor, which
 // gives less precise directional information, but does let the mouse know
 // how far away the cheese is.
-		This.Add("left", ProximitySensor<Cheese>(1.5, 1000.0, 0.8));
-		This.Add("right", ProximitySensor<Cheese>(1.5, 1000.0, -0.8));
+		// This.Add("main", ProximitySensor<Cheese>(1.5, 2000.0, 0));
 		// This.Add("LeftEye", LeftEyeSensor<Cheese>(2.44, 200.0, 0.8));
 		// This.Add("RightEye", RightEyeSensor<Cheese>(2.44, 200.0, -0.8));
 		// This.Add("Eyes", CombinedEyeSensor<Cheese>(2.44, 1000.0, 0.8));
 		This.InitRandom = true;
-		// This.InitDNN(4);
-		This.InitFFN(4); 
+		This.InitDNN(2);
+		// This.InitFFN(4); 
 	}
 
 	// This is identical to the OnCollision method for Mouse, except here we
@@ -140,8 +139,8 @@ public:
 		}
 		
 
-		EvoFFNAnimat::OnCollision(obj);
-		// EvoDNNAnimat::OnCollision(obj);
+		// EvoFFNAnimat::OnCollision(obj);
+		EvoDNNAnimat::OnCollision(obj);
 	}
 
 	// The EvoMouse's fitness is the amount of cheese collected, divided by
