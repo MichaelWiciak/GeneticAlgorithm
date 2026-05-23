@@ -1,1 +1,10 @@
 .DS_Store
+
+# Ignore the entire build directory
+build/
+
+# Ignore any other potential build artifacts
+*.o
+*.o.d
+*.obj
+*.exe
