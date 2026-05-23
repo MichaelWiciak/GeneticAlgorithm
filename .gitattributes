@@ -1,0 +1,4 @@
+# Exclude all Makefiles from language stats
+Makefile linguist-detectable=false
+# Exclude all Jupyter Notebooks from language stats
+*.ipynb linguist-detectable=false
